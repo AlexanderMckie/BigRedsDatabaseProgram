@@ -1,0 +1,45 @@
+﻿<Window x:Class="Week_12_WPF_Database_01.Insertwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Week_12_WPF_Database_01"
+        mc:Ignorable="d"
+        Title="Insertwindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="236*"/>
+            <ColumnDefinition Width="24"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="16"/>
+        </Grid.RowDefinitions>
+        <Label Content="ID" Grid.Column="1" HorizontalAlignment="Left" Margin="10,24.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="254"/>
+        <Label Content="NUMBER PLATE" Grid.Column="1" HorizontalAlignment="Left" Margin="10,9.6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="248"/>
+        <Label Content="SPEED" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="254"/>
+        <Label Content="SPEED LIMIT" Grid.Column="1" HorizontalAlignment="Left" Margin="0,24.2,0,0" Grid.Row="5" VerticalAlignment="Top" Width="264"/>
+        <TextBox x:Name="IdText"        HorizontalAlignment="Left" Height="66" Margin="0.4,10.4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="462" RenderTransformOrigin="0.852,2.951" Grid.Column="2" Grid.Row="2"/>
+
+
+        <TextBox    x:Name="NpText"  HorizontalAlignment="Left" Height="53" Margin="0.4,4.6,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"
+Width="462" RenderTransformOrigin="0.852,2.951" Grid.Column="2" Grid.Row="3"/>
+        <TextBox x:Name="SpText" HorizontalAlignment="Left" Height="59" Margin="0.4,0.4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="462" RenderTransformOrigin="0.852,2.951" Grid.Column="2" Grid.Row="4" Grid.RowSpan="2"/>
+
+        <TextBox x:Name="SlText"  	HorizontalAlignment="Left" 	Height="55" Margin="0.4,5.2,0,0" 	TextWrapping="Wrap" Text="" 	VerticalAlignment="Top" Width="462" 	RenderTransformOrigin="0.852,2.951" 	Grid.Column="2" Grid.Row="5" 	Grid.RowSpan="2"/>
+
+        <Button x:Name="InsertButton" Content="INSERT RECORD" Grid.Column="2" HorizontalAlignment="Left" Margin="0.4,0.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="228" Height="47" Click="InsertButton_Click"/>
+
+        <Button x:Name="ClearButton" Content="CLEAR RECORD" Grid.Column="2" HorizontalAlignment="Left" Margin="244.4,0.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="218" Height="47" Click="ClearButton_Click"/>
+
+    </Grid>
+
+</Window>
